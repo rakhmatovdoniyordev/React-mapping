@@ -1,0 +1,43 @@
+.header{
+    width: 100%;
+    background: linear-gradient(155.28deg, #000000aa 2.06%, #0b0b0bb2 33.08%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(4px);
+    z-index: 101;
+    .navbar{
+        display: flex;
+        color: #8B8E99;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        &__logo{
+            cursor: pointer;
+        }
+        &__collection{
+            display: flex;
+            gap: 27px;
+            font-family: "Poppins";
+            font-weight: 500;
+        }
+        &__icons{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 990px) {
+    .header{
+        .navbar{
+            &__collection{
+                display: none;
+            }
+        }
+    }
+}

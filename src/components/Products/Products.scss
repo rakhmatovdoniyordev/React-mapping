@@ -1,0 +1,104 @@
+.products__wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    .products__card{
+        position: relative;
+        cursor: pointer;
+        .products__img{
+            width: 100%;
+            background: #F6F6F6;
+            padding: 42px 30px;
+            text-align: center;
+            img{
+                transition: .5s ease-in-out;
+            }
+        }
+        .products__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 11px;
+            padding: 16px;
+            .products__brand{
+                font-family: "Poppins";
+                font-size: 24px;
+                color: #1E1D1D;
+                font-weight: 600;
+            }
+            .products__price{
+                font-family: "Poppins";
+                font-size: 24px;
+                font-weight: 600;
+                color: #000;
+                del{
+                    color: #8b8e99;
+                    font-size: 20px;
+                    font-family: "Poppins";
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .products__card::before{
+        content: "";
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        background: url("../../assets/cart.png");
+        width: 38px;
+        height: 38px;
+        opacity: 0;
+        transition: .5s;
+    }
+    .products__card::after{
+        content: "";
+        position: absolute;
+        top: 14%;
+        right: 5%;
+        background: url("../../assets/like.png");
+        width: 38px;
+        height: 38px;
+        opacity: 0;
+        transition: .5s;
+    }
+    .products__card:hover::before{
+        opacity: 1;
+    }
+    .products__card:hover::after{
+        opacity: 1;
+    }
+    .products__card:hover .products__img img{
+        transform: scale(0.9);
+    }
+}
+.product__btn{
+    text-align: center;
+    margin-top: 78px;
+}
+
+
+@media (max-width: 990px) {
+    .products__wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 650px) {
+    .products__wrapper{
+        grid-template-columns:  1fr;
+        .products__brand{
+            font-size: 18px;
+        }
+        .products__price{
+            font-size: 18px;
+            del{
+                font-size: 16px;
+            }
+        }
+    }
+    .product__btn{
+        margin-top: 30px;
+    }
+}

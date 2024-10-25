@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1132px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+a{
+  color: inherit;
+  text-decoration: inherit;
+}
+img{
+  max-width: 100%;
+}
+li{
+  list-style: none;
+}
+button{
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btn{
+  padding: 12px 30px;
+  border-radius: 8px;
+  background: #3858D6;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn:hover{
+  opacity: 0.7;
+}
+
+.subtitle{
+  font-family: "Inter";
+  color: #3858D6;
+  font-weight: 500;
+  text-align: center;
+}
+.title{
+  font-size: 36px;
+  font-family: "Inter";
+  font-weight: 700;
+  text-align: center;
+  color: #1E1D1D;
+  margin-bottom: 65px;
+}
+.stars{
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  font-size: 20px;
+}

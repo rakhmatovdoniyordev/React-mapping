@@ -1,0 +1,90 @@
+.hero{
+    background: #000;
+    &__wrapper{
+        display: flex;
+        padding: 100px 0 130px;
+        gap: 184px;
+            .hero__text{
+                width: calc(50% - 92px);
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                justify-content: center;
+                .hero__title{
+                    font-size: 64px;
+                    font-family: "Poppins";
+                    font-weight: 700;
+                    color: #fff;
+                }
+                .hero__desc{
+                    font-family: "Poppins";
+                    color: #8b8e99;
+                    line-height: 20px;
+                }
+                .hero__search{
+                    max-width: 443px;
+                    padding: 7px 9px 7px 19px;
+                    display: flex;
+                    align-items: center;
+                    background: #fff;
+                    border-radius: 15px;
+                    input{
+                        flex: 1;
+                        height: 100%;
+                        background: transparent;
+                        outline: none;
+                        border: none;
+                        text-indent: 16px;
+                    }
+                }
+            }
+            .hero__img{
+                width: calc(50% - 92px);
+                img{
+                    width: 100%;
+                }
+            }
+    }
+}
+
+@media (max-width: 990px) {
+    .hero{
+        .hero__wrapper{
+            flex-wrap: wrap;
+            padding: 80px 0 80px;
+            gap: 80px;
+            .hero__text{
+                width: 100%;
+                align-items: center;
+                text-align: center;
+                .hero__title{
+                    font-size: 28px;
+                }
+            }
+            .hero__img{
+                width: 100%;
+                display: flex;
+                justify-content:center;
+            }
+        }
+    }
+}
+@media (max-width: 450px) {
+    .hero{
+        .hero__wrapper{
+            .hero__text{
+                .hero__search{
+                    padding: 2px 4px 2px 9px;
+                    width: 80%;
+                    height: 50px;
+                    input{
+                        text-indent: 5px;
+                    }
+                    .btn{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

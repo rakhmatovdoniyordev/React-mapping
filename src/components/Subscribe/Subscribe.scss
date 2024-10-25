@@ -1,0 +1,81 @@
+.subscribe{
+    margin-top: 135px;
+    .subscribe__wrapper{
+        background: #F6F6F6;
+        border-radius: 22px;
+        display: flex;
+        gap: 178px;
+        padding: 40px 100px;
+        .subscribe__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 15px;
+            .subscribe__title{
+                font-family: "Inter";
+                font-size: 36px;
+                font-weight: 700;
+                color: #1E1D1D;
+            }
+            .subscribe__desc{
+                font-family: "Inter";
+                font-weight: 500;
+                color: #8B8E99;
+            }
+            .subscribe__inp{
+                max-width: 443px;
+                padding: 7px 9px 7px 19px;
+                display: flex;
+                align-items: center;
+                background: #fff;
+                border-radius: 15px;
+                input{
+                    flex: 1;
+                    height: 100%;
+                    background: transparent;
+                    outline: none;
+                    border: none;
+                    text-indent: 16px;
+                }
+            }
+        }
+        .subscribe__img{
+            text-align: center;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:990px) {
+    .subscribe{
+        margin-top: 100px;
+        .subscribe__wrapper{
+            .subscribe__img{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 550px) {
+    .subscribe{
+        margin-top: 60px;
+        .subscribe__wrapper{
+            padding: 16px 40px;
+        }
+    }
+}
+@media (max-width: 430px) {
+    .subscribe{
+        .subscribe__wrapper{
+            .subscribe__text{
+                .subscribe__inp{
+                    .btn{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
